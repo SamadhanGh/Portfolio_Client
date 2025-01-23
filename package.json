@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",  // Add this line for static export
-    "start": "npx serve out",  // Use 'npx serve out' to serve static files
+    "export": "next export",  
+    "start": "npx serve out", 
     "lint": "next lint"
   },
   "dependencies": {
