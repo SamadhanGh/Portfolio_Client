@@ -11,19 +11,19 @@
 //     },
 // };
 
-// export default nextConfig;
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export', // Enable static export
-    images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'i.ibb.co', // Replace with your domain(s)
-                pathname: '/**', // Match all paths
-            },
-        ],
-    },
+  output: 'export',  // Add this to enable static export
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co', // Adjust to your image host if needed
+        pathname: '/**',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
+
