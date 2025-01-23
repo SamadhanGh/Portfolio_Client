@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",  // No need to add next export anymore
-    "start": "npx serve out",  // Serve static files after export
+    "build": "next build",  
+    "start": "npx serve out",  
     "lint": "next lint"
   },
   "dependencies": {
