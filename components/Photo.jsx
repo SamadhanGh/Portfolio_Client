@@ -17,7 +17,7 @@ const Photo = () => {
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
           <Image
-            src="/assets/photo.png" // Ensure this path is correct and accessible
+            src="public/assets/photo.png" // Ensure this path is correct and accessible
             alt="Descriptive text about the image"
             quality={100}
             width={498} // Explicitly set width and height for static images
