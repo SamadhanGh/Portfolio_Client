@@ -18,14 +18,25 @@ const Photo = () => {
           }}
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
-          <Image
+{/*           <Image
             src="public/assets/photo.png"
             priority
             quality={100}
             fill
             alt=""
             className="object-contain"
+          /> */}
+
+           <Image
+            src="https://i.ibb.co/64c7Pt9/photo.jpg"
+            alt="Descriptive text about the image"
+            quality={100}
+            layout="fill"
+            objectFit="contain"
+            priority={false} // Only set to `true` if this image is above the fold
+            className="object-contain"
           />
+          
         </motion.div>
         {/* circle */}
         <motion.svg
