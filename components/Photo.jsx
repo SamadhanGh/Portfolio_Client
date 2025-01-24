@@ -28,7 +28,7 @@ const Photo = () => {
           /> */}
 
            <Image
-            src="https://i.ibb.co/64c7Pt9/photo.jpg"
+            src="https://i.ibb.co/8DCcNq8/photo.png"
             alt="Descriptive text about the image"
             quality={100}
             layout="fill"
