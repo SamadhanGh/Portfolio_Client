@@ -1,11 +1,4 @@
- <Image
-            src="/assets/photo.png" // Corrected path for local asset
-            alt="Descriptive text about the image"
-            quality={100}
-            width={498} // Explicitly set width and height if not using layout="fill"
-            height={498}
-            className="object-contain"
-          />"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -14,55 +7,32 @@ const Photo = () => {
   return (
     <div className="w-full h-full relative">
       <div>
-        {/* image */}
+        {/* Animated Image */}
         <motion.div
-          initial={{
-            opacity: 0,
-          }}
+          initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
-{/*           <Image
-            src="public/assets/photo.png"
-            priority
-            quality={100}
-            fill
-            alt=""
-            className="object-contain"
-          /> */}
-
-{/*            <Image
-            src="https://i.ibb.co/8DCcNq8/photo.png"
+          <Image
+            src="/assets/photo.png" // Ensure this path is correct and accessible
             alt="Descriptive text about the image"
             quality={100}
-            layout="fill"
-            objectFit="contain"
-            priority={false} // Only set to `true` if this image is above the fold
-            className="object-contain"
-          /> */}
-
-           <Image
-            src="/assets/photo.png" // Corrected path for local asset
-            alt="Descriptive text about the image"
-            quality={100}
-            width={498} // Explicitly set width and height if not using layout="fill"
+            width={498} // Explicitly set width and height for static images
             height={498}
             className="object-contain"
           />
-          
         </motion.div>
-        {/* circle */}
+
+        {/* Animated Circle */}
         <motion.svg
           className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
-          initial={{
-            opacity: 0,
-          }}
+          initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
             transition: { delay: 2, duration: 0.4, ease: "easeInOut" },
@@ -94,7 +64,3 @@ const Photo = () => {
 };
 
 export default Photo;
-
-
-
-
