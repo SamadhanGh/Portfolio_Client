@@ -1,4 +1,11 @@
-"use client";
+ <Image
+            src="/assets/photo.png" // Corrected path for local asset
+            alt="Descriptive text about the image"
+            quality={100}
+            width={498} // Explicitly set width and height if not using layout="fill"
+            height={498}
+            className="object-contain"
+          />"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
