@@ -17,7 +17,7 @@ const Photo = () => {
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
           <Image
-            src="https://i.ibb.co/8DCcNq8/photo.png" // Ensure this path is correct and accessible
+            src="https://images.app.goo.gl/5LAJqGTBuBP9SwVT6" // Ensure this path is correct and accessible
             alt="Descriptive text about the image"
             quality={100}
             width={498} // Explicitly set width and height for static images
