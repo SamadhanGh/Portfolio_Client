@@ -27,13 +27,22 @@ const Photo = () => {
             className="object-contain"
           /> */}
 
-           <Image
+{/*            <Image
             src="https://i.ibb.co/8DCcNq8/photo.png"
             alt="Descriptive text about the image"
             quality={100}
             layout="fill"
             objectFit="contain"
             priority={false} // Only set to `true` if this image is above the fold
+            className="object-contain"
+          /> */}
+
+           <Image
+            src="/assets/photo.png" // Corrected path for local asset
+            alt="Descriptive text about the image"
+            quality={100}
+            width={498} // Explicitly set width and height if not using layout="fill"
+            height={498}
             className="object-contain"
           />
           
