@@ -5,7 +5,8 @@
     // const prodUrl =  "https://api.localhost:4000/";
     const prodUrl =  "https://portfolioserver-production-2fa1.up.railway.app/";
     //const prodUrl = "https://api.localhost:4000/";
-    const baseURL = process.env.NEXT_PUBLIC_API_URL;
+    // const baseURL = process.env.NEXT_PUBLIC_API_URL;
+      const baseURL = process.env.NEXT_PUBLIC_API_URL;
     //const baseURL = `${prodUrl}api/v1/`;
 
     const publicClient = axios.create({
