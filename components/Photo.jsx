@@ -18,13 +18,15 @@ const Photo = () => {
         >
           <Image
            // src="https://images.app.goo.gl/5LAJqGTBuBP9SwVT6" // Ensure this path is correct and accessible
-            src="public/assets/photo.png"
+            src="/assets/photo.png"
             alt="Descriptive text about the image"
-            quality={100}
+            //quality={100}
             width={498} // Explicitly set width and height for static images
             height={498}
             className="object-contain"
           />
+  
+
         </motion.div>
 
         {/* Animated Circle */}
